@@ -10,7 +10,7 @@ const FeaturesSection = () => {
       <p className="mb-8 mt-4 text-[#FFFFFF] text-sm">Watch this 1min video to learn about Orinix.</p>
 
       <div className="relative mb-12 mt-11">
-        <img src={thumb} alt="Video thumbnail" className="mx-auto rounded-lg shadow-lg w-[1296px] h-[680px]" />
+        <img src={thumb} alt="Video thumbnail" className="mx-auto rounded-lg shadow-lg w-full max-w-[1296px] h-auto" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="bg-[#6A65FF] rounded-full p-4">
             <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -20,8 +20,8 @@ const FeaturesSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-around h-[517px]">
-        <div className="w-1/3 p-4">
+      <div className="flex flex-wrap justify-around">
+        <div className="w-full md:w-1/3 p-4">
           <div className="flex items-center justify-center mb-4">
             <img src={logo} alt="Fully Responsive" className="h-12 w-12"/>
           </div>
@@ -29,7 +29,7 @@ const FeaturesSection = () => {
           <p className="mt-2">With lots of unique blocks,</p>
           <p className="mt-2">you can easily build a page without coding.</p>
         </div>
-        <div className="w-1/3 p-4">
+        <div className="w-full md:w-1/3 p-4">
           <div className="flex items-center justify-center mb-4">
             <img src={logo} alt="Multiple Layouts" className="h-12 w-12"/>
           </div>
@@ -37,7 +37,7 @@ const FeaturesSection = () => {
           <p className="mt-2">With lots of unique blocks,</p>
           <p className="mt-2">you can easily build a page without coding.</p>
         </div>
-        <div className="w-1/3 p-4">
+        <div className="w-full md:w-1/3 p-4">
           <div className="flex items-center justify-center mb-4">
             <img src={logo} alt="Faster Loading" className="h-12 w-12"/>
           </div>
@@ -45,7 +45,7 @@ const FeaturesSection = () => {
           <p className="mt-2">With lots of unique blocks,</p>
           <p className="mt-2">you can easily build a page without coding.</p>
         </div>
-        <div className="w-1/3 p-4">
+        <div className="w-full md:w-1/3 p-4">
           <div className="flex items-center justify-center mb-4">
             <img src={logo} alt="Super Support" className="h-12 w-12"/>
           </div>
@@ -53,7 +53,7 @@ const FeaturesSection = () => {
           <p className="mt-2">With lots of unique blocks,</p>
           <p className="mt-2">you can easily build a page without coding.</p>
         </div>
-        <div className="w-1/3 p-4">
+        <div className="w-full md:w-1/3 p-4">
           <div className="flex items-center justify-center mb-4">
             <img src={logo} alt="Rich Documentation" className="h-12 w-12"/>
           </div>
@@ -61,7 +61,7 @@ const FeaturesSection = () => {
           <p className="mt-2">With lots of unique blocks,</p>
           <p className="mt-2">you can easily build a page without coding.</p>
         </div>
-        <div className="w-1/3 p-4">
+        <div className="w-full md:w-1/3 p-4">
           <div className="flex items-center justify-center mb-4">
             <img src={logo} alt="Lifetime Updates" className="h-12 w-12"/>
           </div>

@@ -60,10 +60,10 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="bg-[#051139] text-white p-8 text-center h-[1100px]">
+    <section className="bg-[#051139] text-white p-8 text-center">
       <h1 className="text-6xl md:text-5xl font-bold pt-11 pb-7">Pricing Plans</h1>
       <p className='text-sm text-[#FFFFFF]'>Coca landing page UI Kit no credit card required. All plans come with</p>
-        <p className='text-sm text-[#FFFFFF]'> a free, 14 day trial of our Premium features.</p>
+      <p className='text-sm text-[#FFFFFF]'> a free, 14 day trial of our Premium features.</p>
       <div className="flex justify-center mb-8 pt-11">
         <button
           className={`px-4 py-2  ${billingCycle === 'Monthly' ? 'bg-white text-blue-900' : 'bg-blue-800 text-white'}`}
@@ -78,9 +78,9 @@ const PricingSection = () => {
           Yearly
         </button>
       </div>
-      <div className="flex justify-around pt-11 rounded-lg">
+      <div className="flex flex-wrap justify-center gap-8 pt-11">
         {plans.map((plan, index) => (
-          <div key={index} className={`relative w-1/4 p-4  rounded-lg ${plan.popular ? 'bg-[#515DEF] scale-105' : 'bg-[#0D1849]'}`}>
+          <div key={index} className={`relative w-full md:w-1/3 lg:w-1/4 p-4 rounded-lg ${plan.popular ? 'bg-[#515DEF] scale-105' : 'bg-[#0D1849]'}`}>
             {plan.popular && (
               <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2 bg-[#FFD88D] font-bold rounded-lg w-[130px] h-[40px] text-center shadow-lg">
                 <p className='text-xs p-2'>MOST POPULAR</p>

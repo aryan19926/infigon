@@ -7,19 +7,19 @@ const HeroSection = () => {
   return (
     <>
       <section className="bg-[#051139] text-white p-8 text-center relative">
-        <nav className="flex justify-between items-center py-4 px-6">
-          <div className="flex items-center">
+        <nav className="flex flex-col md:flex-row justify-between items-center py-4 px-6">
+          <div className="flex items-center mb-4 md:mb-0">
             <img src={logo} alt="Orinix" className="w-12 h-12" />
-            <a href="/" className="text-white text-xl font-bold">Orinix</a>
+            <a href="/" className="text-white text-xl font-bold ml-2">Orinix</a>
           </div>
-          <div className="flex space-x-6 pl-9">
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 pl-0 md:pl-9">
             <a href="#homepage" className="text-white">Homepage</a>
             <a href="#features" className="text-white">Features</a>
             <a href="#usecases" className="text-white">Use Cases</a>
             <a href="#pricing" className="text-white">Pricing</a>
             <a href="#blog" className="text-white">Blog</a>
           </div>
-          <div>
+          <div className="mt-4 md:mt-0">
             <button className="px-4 py-2 bg-purple-600 rounded hover:bg-purple-700 transition duration-300">Join The Waitlist</button>
           </div>
         </nav>
@@ -36,7 +36,7 @@ const HeroSection = () => {
             <button className="px-6 py-2 bg-transparent border border-white rounded hover:bg-white hover:text-blue-900 transition duration-300">Know More</button>
           </div>
           <div className="relative">
-            <img src={dash} alt="Dashboard" className="mt-8 mx-auto rounded shadow-lg w-[819px] h-[542px] pr-[80px] relative z-10" />
+            <img src={dash} alt="Dashboard" className="mt-8 mx-auto rounded shadow-lg w-full max-w-[819px] h-auto pr-0 md:pr-[80px] relative z-10" />
           </div>
         </div>
       </section>
