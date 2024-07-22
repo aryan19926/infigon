@@ -3,8 +3,8 @@ import analysis from "../assets/analysis.png"
 
 const Analysis = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center min-h-screen bg-[#051139] relative p-4 md:p-0">
-      <div className="bg-white p-2 rounded-lg shadow-lg relative md:ml-40 mb-8 md:mb-0">
+    <div className="flex flex-col md:flex-row items-center min-h-screen bg-[#051139] relative p-4 md:p-0 gap-[100px]">
+      <div className="bg-white p-2 rounded-lg shadow-lg relative md:ml-40 mb-8 md:mb-0 ">
         <img src={analysis} alt="Activity" className="w-[259px] h-[431px] mb-4 rounded-lg" />
         <div className="absolute bottom-[-50px] right-[-50px] md:right-[-130px] bg-white p-4 rounded-lg cursor-pointer w-[250px] h-[120px] text-center shadow-lg">
           <p className='font-bold'>Food Utilization</p>
